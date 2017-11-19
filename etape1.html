@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BlackJack!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="js/etape1.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body class="align-item-center">
+    <h1>Blackjack</h1>
+    <hr>
+    <p>Vous devez essayer un nombre entre 1 et 10.</p>
+    <form class="card body-card m-5 align-self-center" role="form" id="form" onsubmit="Devine(); return false;">
+        <fieldset>
+            <legend>formulaire !</legend>
+            <div class="form-group offset">
+                <label class="col-lg-2 col-sm-2 col-form-label" for="form__text">Mon champ de saisi :</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="form__text" type="number" min="1" max="10" name="text">
+                </div>
+            </div>
+            <!--   button ok to submit -->
+            <div class="form-group d-flex justify-content-center">
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input class="btn btn-primary" id="form__submit" type="submit" value="Envoyer">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group d-flex justify-content-center" id="form__result">Le résultat</div>
+        </fieldset>
+    </form>
+
+</body>
+
+
+</html>
